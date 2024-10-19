@@ -1,2 +1,2 @@
 # table
-Таблицы
+Таблицы https://tersen-88.github.io/table/
