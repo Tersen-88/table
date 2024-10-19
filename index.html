@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблицы</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            /*линия между ячейками отображается только одна*/
+            min-width: 900px;
+        }
+
+        .padding-td {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        thead {
+            background-color: chocolate;
+            color: rgb(255, 246, 236);
+        }
+
+        tfoot {
+            background-color: chocolate;
+            color: rgb(255, 246, 236);
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table">
+
+        <caption>table</caption>
+        <thead>
+            <tr>
+                <th class="padding-td">№</th>
+                <th class="padding-td">наименование товара</th>
+                <th class="padding-td">ед. измерения</th>
+                <th class="padding-td">кол-во товара</th>
+                <th class="padding-td">стоимость за ед измерения</th>
+                <th class="padding-td">стоимость</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>томаты</td>
+                <td>кг</td>
+                <td>10</td>
+                <td>50</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>огурцы</td>
+                <td>кг</td>
+                <td>15</td>
+                <td>30</td>
+                <td>450</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>фисташки</td>
+                <td>кг</td>
+                <td>0.1</td>
+                <td>1000000000000000000000000000000000000000000000000000000000000000000</td>
+                <td>100000000000000000000000000000000000000000000000000000000000000000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Итого</td>
+                <td class="padding-td" colspan="5">100000000000000000000000000000000000000000000000000000000000000950
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
